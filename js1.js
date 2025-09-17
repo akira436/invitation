@@ -1,14 +1,3 @@
-// Global variables
-let currentImageIndex = 0
-const galleryImages = [
-  "/javanese-couple-engagement-photo-traditional-batik.png",
-  "/javanese-couple-prewedding-photo-traditional-kebay.png",
-  "/javanese-couple-romantic-photo-traditional-wedding.png",
-  "/javanese-couple-outdoor-photo-traditional-dress.png",
-  "/javanese-couple-portrait-traditional-wedding-cerem.png",
-  "/javanese-couple-candid-photo-traditional-setting.png",
-]
-
 // Initialize when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
   initializeCountdown()
@@ -49,23 +38,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Fungsi openInvitation() yang sudah diperbaiki
 function openInvitation() {
-  const coverSection = document.getElementById("cover")
+  // const coverSection = document.getElementById("cover")
   const mainContent = document.getElementById("mainContent")
   
-  coverSection.style.transform = "translateY(-100%)"
-  coverSection.style.transition = "transform 1s ease-in-out"
-  
   setTimeout(() => {
-    coverSection.style.display = "none"
     mainContent.classList.remove("hidden")
-    mainContent.classList.add("show")
+    mainContent.classList.add("opacity-100")
   }, 1000)
+  // munculin nav
   document.getElementById('floatingNav').classList.remove('hidden')
   // Memanggil fungsi untuk memulai musik saat undangan dibuka
   toggleMusic();
+   // Scroll ke mainContent setelah elemen muncul
+  setTimeout(() => {
+    mainContent.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }, 1100)
 };
-
-// ... (Sisa kode Anda seperti countdown, navigasi, dan lainnya)
 
 // Countdown timer
 function initializeCountdown() {
@@ -185,7 +176,7 @@ function submitRSVP(event) {
       alert(data); // Tampilkan pesan sukses atau error dari PHP
       
       // Jika berhasil, tampilkan modal sukses
-      if (data.includes("Terima kasih, konfirmasi Anda berhasil disimpan!")) {
+      if (res.success("Terima kasih, konfirmasi Anda berhasil disimpan!")) {
           document.getElementById("successModal").style.display = "block";
           document.body.style.overflow = "hidden";
           form.reset(); // Reset form jika berhasil
@@ -220,21 +211,6 @@ window.addEventListener("click", (event) => {
   if (event.target === lightbox) {
     closeLightbox()
   }
-})
-
-
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault()
-    const target = document.querySelector(this.getAttribute("href"))
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
-    }
-  })
 })
 
 // Add loading animation

@@ -5,239 +5,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>undangan digital</title>
     <link rel="icon" href="assets/BCA.jpeg">
-    <link rel="icon" type="image/x-icon" href="favicon.icon">
+    <link rel="icon" type="image/x-icon" href="/favicon.icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Replaced custom CSS with Tailwind v4 -->
-     <link rel="stylesheet" href="dist/styles.css">
+     <!-- Replaced custom CSS with Tailwind v4 -->
+    <!-- <link rel="stylesheet" href="dist/styles.css"> -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="font-sans leading-relaxed text-gray-800 overflow-x-hidden max-md:text-[90%]">
-    <!-- Floating Navigation -->
-   <nav class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 rounded-full p-2 backdrop-blur-sm shadow-2xl transition-all duration-300 hidden bg-[#A8B5A0]" id="floatingNav">
-        <ul class="flex flex-row gap-4">
-            <li><a href="#Quote" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg"><i class="fas fa-book-open"></i></a></li>
-            <li><a href="#couple" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg"><i class="fas fa-heart"></i></a></li>
-            <li><a href="#event" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg"><i class="fas fa-calendar"></i></a></li>
-            <li><a href="#gallery" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg"><i class="fa-regular fa-images"></i></a></li>
-            <li><a href="#rsvp" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="#gift" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg"><i class="fa-sharp-duotone fa-solid fa-gift"></i></a></li>
+<body class="font-sans leading-relaxed text-gray-800 overflow-x-hidden max-sm:text-sm">
+      <!--Navigation -->
+    <nav class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 rounded-full p-2 backdrop-blur-sm shadow-2xl transition-all duration-300 hidden bg-[#A8B5A0] max-sm:p-1" id="floatingNav">
+        <ul class="flex flex-row gap-4 max-sm:gap-2">
+            <li><a href="#Quote" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg max-sm:w-9 max-sm:h-9 max-sm:text-sm"><i class="fas fa-book-open"></i></a></li>
+            <li><a href="#couple" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg max-sm:w-9 max-sm:h-9 max-sm:text-sm"><i class="fas fa-heart"></i></a></li>
+            <li><a href="#event" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg max-sm:w-9 max-sm:h-9 max-sm:text-sm"><i class="fas fa-calendar"></i></a></li>
+            <li><a href="#gallery" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg max-sm:w-9 max-sm:h-9 max-sm:text-sm"><i class="fa-regular fa-images"></i></a></li>
+            <li><a href="#rsvp" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg max-sm:w-9 max-sm:h-9 max-sm:text-sm"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="#gift" class="flex items-center justify-center w-11 h-11 text-white rounded-full transition-all duration-300 bg-white/10 hover:bg-[#D4AF37] hover:scale-110 hover:shadow-lg max-sm:w-9 max-sm:h-9 max-sm:text-sm"><i class="fa-sharp-duotone fa-solid fa-gift"></i></a></li>
         </ul>
     </nav>
-    <!-- Cover Page -->
+     <!-- Cover Page -->
     <section id="cover" class="h-screen bg-gradient-to-br from-[#F5E6CC] via-[#A8B5A0] to-[#F8D7DA] flex items-center justify-center relative overflow-hidden">
-        <!-- hiasan bunga  -->
-        <div class="bunga absolute top-0 left-[-30px] bg-contain bg-no-repeat h-32 w-32 sm:h-40 sm:w-40 md:h-64 md:w-64 z-10 " style="background-image: url('assets/bunga1.png');"></div> 
-        <div class="bunga absolute top-0 right-[0px]  bg-contain bg-no-repeat h-40 w-40 sm:h-60 sm:w-60 md:h-96 md:w-96 z-10 " style="background-image: url('assets/bunga4.png');"></div>
-        <!-- <div class="absolute bottom-[-150px] left-[-250px] bg-contain bg-no-repeat h-[60%] w-[60%] z-10 rotate-[30deg]" style="background-image: url('/assets/Peony3.png');"></div>
-        <div class="absolute bottom-0 right-[-300px] bg-contain bg-no-repeat h-[60%] w-[60%] z-10 rotate-[-30deg]" style="background-image: url('/assets/Peony3.png');"></div> -->
-
-        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('assets/pasangan.png');"></div>
-        <div class="text-center text-gray-900 z-10 max-w-2xl px-5 animate-fade-in-up">
-            <h1 class="font-serif text-6xl md:text-7xl font-bold mb-5 animate-fade-in-up">Arya & Sari</h1>
-            <p class="text-2xl mb-8 text-[#D4AF37] font-medium animate-fade-in-up-delay-1">25 Desember 2024</p>
-            <p class="text-lg mb-10 leading-relaxed animate-fade-in-up-delay-2">Dengan penuh kebahagiaan, kami mengundang Anda untuk berbagi kegembiraan di hari istimewa kami</p>
-            <button class="bg-gradient-to-r from-[#D4AF37] to-[#EBC75B] text-[#2E2E2E] py-4 px-10 text-lg font-semibold rounded-full shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all animate-fade-in-up-delay-3" onclick="openInvitation()">
-                <i class="fas fa-envelope-open mr-3"></i>
-                Buka Undangan
-            </button>
-            <div class="w-36 h-12 bg-contain bg-no-repeat bg-center mx-auto mt-8 opacity-80 rotate-180" style="background-image: url('assets/BCA.jpeg');"></div>
-        </div>
+         <!-- hiasan bunga -->
+        <div class="bunga absolute top-0 left-[-30px] bg-contain bg-no-repeat h-36 w-36 sm:h-40 sm:w-40 md:h-64 md:w-64 z-10 max-sm:h-24 max-sm:w-24" style="background-image: url('assets/bunga1.png');"></div> 
+        <div class="bunga absolute top-0 right-[0px] bg-contain bg-no-repeat h-56 w-56 sm:h-60 sm:w-60 md:h-96 md:w-96 z-10 max-sm:h-28 max-sm:w-28" style="background-image: url('assets/bunga4.png');"></div>
+        <img src="assets/pasangan.png" alt="" class="absolute inset-0 bg-cover bg-center w-full h-full object-cover">
+        <div class="relative z-10 text-center px-6 animate-fade-in-up">
+            <p class="text-sm text-white/80 tracking-widest mb-2 sm:text-base">The Wedding Of</p>
+            <h2 class="font-serif text-4xl sm:text-6xl md:text-7xl text-white drop-shadow-md">Arya & Sari</h2>
+                <div class="mt-6 inline-block bg-white/70 backdrop-blur-sm rounded-2xl p-5 shadow-lg text-center max-sm:p-4">
+                    <p class="text-sm text-gray-700 max-sm:text-xs">Kepada Yth.<br>Bapak/Ibu/Saudara/i</p>
+                    <p class="mt-2 text-lg font-semibold text-[#b64c3a] max-sm:text-base">Nama Tamu</p>
+                    <p class="text-xs text-gray-500 mt-1">VIP</p>
+                </div>
+            <div class="mt-6">
+                <button class="bg-gradient-to-r from-[#D4AF37] to-[#EBC75B] text-[#2E2E2E] inline-flex item-center py-4 px-10 text-lg font-semibold rounded-full shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all animate-fade-in-up-delay-3 max-sm:py-3 max-sm:px-6 max-sm:text-base" onclick="openInvitation()">
+                    <i class="fas fa-envelope-open mr-3 max-sm:mr-2"></i>
+                    Buka Undangan
+                </button>
+            </div>
+        </div>    
     </section>
-    <!-- Main Content -->
-    <!-- musik undangan -->
-    <div id="mainContent" class="opacity-0 transition-opacity duration-1000 hidden">
-        <div id="audio-container" class=" fixed bottom-8 right-8 z-30">
+     <!-- Main Content -->
+     <div id="mainContent" class="opacity-0 transition-opacity duration-1000 hidden">
+        <!-- musik undangan --> 
+        <div id="audio-container" class="fixed bottom-8 right-8 z-30 max-sm:bottom-4 max-sm:right-4">
             <audio id="song" loop>
                 <source src="assets/akon-be-with-you.mp3" type="audio/mpeg">
             </audio>
     
-            <div class="w-15 h-15 bg-[#73db03cc] backdrop-blur-md rounded-[50%] flex items-center justify-center cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 animate-spin" id="audioicon" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
-                <i class="fa-doutone fa-solid fa-play text-[28px] text-white" id="audioconsymbol"></i>
+            <div class="w-15 h-15 bg-[#73db03cc] backdrop-blur-md rounded-[50%] flex items-center justify-center cursor-pointer transition-transform duration-300 ease-in-out hover:scale-110 animate-spin max-sm:w-12 max-sm:h-12" id="audioicon" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+                <i class="fa-doutone fa-solid fa-play text-[28px] text-white max-sm:text-lg" id="audioconsymbol"></i>
             </div>
         </div>
-        <!-- Quote Section -->
-        <section id="Quote" class="py-20 bg-gradient-to-br from-[#A8B5A0] to-[#F8D7DA] text-gray-900 text-center">
+         <!-- Quote Section -->
+        <section id="Quote" class="py-20 bg-gradient-to-br from-[#A8B5A0] to-[#F8D7DA] text-gray-900 text-center max-sm:py-12">
         <div class="max-w-4xl mx-auto px-5 animate-float">
-            <i class="text-5xl text-[#D4AF37] mb-8 block animate-float-delay-2 ">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</i>
-            <p class="text-xl italic mb-8 animate-float-delay-2 \4">artinya <hr> "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang." </p>
-            <p class="text-lg text-[#D4AF37] font-semibold">- QS. Ar-Rum: 21 -</p>
+            <i class="text-5xl text-[#D4AF37] mb-8 block animate-float-delay-2 max-sm:text-3xl">وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</i>
+            <p class="text-xl italic mb-8 animate-float-delay-2 max-sm:text-lg">artinya <hr> "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang." </p>
+            <p class="text-lg text-[#D4AF37] font-semibold max-sm:text-base">- QS. Ar-Rum: 21 -</p>
         </div>
-    </section>
-    
+        </section>
         <!-- Couple Profile Section -->
-        <section id="couple" class="py-24 bg-[#F5E6CC]">
+        <section id="couple" class="py-24 bg-[#F5E6CC] max-sm:py-12">
             <div class="max-w-6xl mx-auto px-5">
-                <h2 class="font-serif text-4xl text-center mb-12 text-[#556B2F] relative after:content-[''] after:absolute  after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded">Mempelai</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center max-w-5xl mx-auto">
-                    <div class="text-center bg-white p-10 rounded-3xl shadow-xl transition-transform duration-300 hover:-translate-y-3">
-                        <div class="relative w-60 h-60 mx-auto mb-8 rounded-full overflow-hidden border-4 border-yellow-400">
-                            <img src="assets/gambar cowo(2).png" alt="Arya" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                <h2 class="font-serif text-4xl text-center mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded max-sm:text-3xl max-sm:mb-8">Mempelai</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center max-w-5xl mx-auto max-sm:gap-8">
+                    <div class="text-center bg-white p-10 rounded-3xl shadow-xl transition-transform duration-300 hover:-translate-y-3 max-sm:p-6">
+                        <div class="relative w-60 h-60 mx-auto mb-8 rounded-full overflow-hidden border-4 border-yellow-400 max-sm:w-40 max-sm:h-40">
+                            <img src="assets/03.jpg" alt="Arya" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
                             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-yellow-400/20 opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
                         </div>
-                        <h3 class="font-serif text-2xl text-purple-900 mb-4">Arya Wijaya Kusuma</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">Putra pertama dari<br>Bapak Bambang Kusuma & Ibu Siti Rahayu</p>
+                        <h3 class="font-serif text-2xl text-purple-900 mb-4 max-sm:text-xl">Arya Wijaya Kusuma</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed max-sm:text-sm">Putra pertama dari<br>Bapak Bambang Kusuma & Ibu Siti Rahayu</p>
                         <div class="flex justify-center gap-4">
-                            <a href="#" class="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-full no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-full no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-full no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-lg max-sm:w-8 max-sm:h-8"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-full no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-lg max-sm:w-8 max-sm:h-8"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                     <div class="flex items-center justify-center lg:order-none order-first">
-                        <div class="w-20 h-20 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-3xl text-purple-900 animate-heartbeat">
+                        <div class="w-20 h-20 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center text-3xl text-purple-900 animate-heartbeat max-sm:w-16 max-sm:h-16 max-sm:text-2xl">
                             <i class="fas fa-heart"></i>
                         </div>
                     </div>
-                    <div class="text-center bg-white p-10 rounded-3xl shadow-xl transition-transform duration-300 hover:-translate-y-3">
-                        <div class="relative w-60 h-60 mx-auto mb-8 rounded-full overflow-hidden border-4 border-yellow-400">
-                            <img src="assets/gambar cewe.png" alt="Sari" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    <div class="text-center bg-white p-10 rounded-3xl shadow-xl transition-transform duration-300 hover:-translate-y-3 max-sm:p-6">
+                        <div class="relative w-60 h-60 mx-auto mb-8 rounded-full overflow-hidden border-4 border-yellow-400 max-sm:w-40 max-sm:h-40">
+                            <img src="assets/04.jpg" alt="Sari" class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
                             <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-yellow-400/20 opacity-0 transition-opacity duration-300 hover:opacity-100"></div>
                         </div>
-                        <h3 class="font-serif text-2xl text-purple-900 mb-4">Sari Dewi Lestari</h3>
-                        <p class="text-gray-600 mb-6 leading-relaxed">Putri kedua dari<br>Bapak Sutrisno Lestari & Ibu Endang Suryani</p>
+                        <h3 class="font-serif text-2xl text-purple-900 mb-4 max-sm:text-xl">Sari Dewi Lestari</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed max-sm:text-sm">Putri kedua dari<br>Bapak Sutrisno Lestari & Ibu Endang Suryani</p>
                         <div class="flex justify-center gap-4">
-                            <a href="#" class="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-full no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-full no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-full no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-lg max-sm:w-8 max-sm:h-8"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-purple-900 to-purple-700 text-white rounded-full no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-lg max-sm:w-8 max-sm:h-8"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
         <!-- Event Information -->
-        <section id="event" class="py-24 bg-[#F8D7DA]">
+        <section id="event" class="py-24 bg-[#F8D7DA] max-sm:py-12">
             <div class="max-w-6xl mx-auto px-5">
-                <h2 class="font-serif text-4xl text-center mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded">Acara Pernikahan</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
-                    <div class="bg-gray-50 p-10 rounded-3xl text-center shadow-xl transition-transform duration-300 hover:-translate-y-3">
-                        <div class="w-20 h-20 bg-gradient-to-r from-purple-900 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl text-white">
+                <h2 class="font-serif text-4xl text-center mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded max-sm:text-3xl max-sm:mb-8">Acara Pernikahan</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20 max-sm:gap-6">
+                    <div class="bg-gray-50 p-10 rounded-3xl text-center shadow-xl transition-transform duration-300 hover:-translate-y-3 max-sm:p-6">
+                        <div class="w-20 h-20 bg-gradient-to-r from-purple-900 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl text-white max-sm:w-16 max-sm:h-16 max-sm:text-2xl">
                             <i class="fas fa-ring"></i>
                         </div>
-                        <h3 class="font-serif text-2xl text-purple-900 mb-6">Akad Nikah</h3>
-                        <div class="space-y-3 mb-5">
-                            <p class="flex items-center justify-center gap-3 text-gray-600"><i class="fas fa-calendar text-purple-900 w-5"></i> Minggu, 25 Desember 2024</p>
-                            <p class="flex items-center justify-center gap-3 text-gray-600"><i class="fas fa-clock text-purple-900 w-5"></i> 08:00 - 10:00 WIB</p>
-                            <p class="flex items-center justify-center gap-3 text-gray-600"><i class="fas fa-map-marker-alt text-purple-900 w-5"></i> Masjid Al-Ikhlas, Yogyakarta</p>
+                        <h3 class="font-serif text-2xl text-purple-900 mb-6 max-sm:text-xl">Akad Nikah</h3>
+                        <div class="space-y-3 mb-5 max-sm:space-y-2">
+                            <p class="flex items-center justify-center gap-3 text-gray-600 max-sm:text-sm"><i class="fas fa-calendar text-purple-900 w-5"></i> Minggu, 25 Desember 2024</p>
+                            <p class="flex items-center justify-center gap-3 text-gray-600 max-sm:text-sm"><i class="fas fa-clock text-purple-900 w-5"></i> 08:00 - 10:00 WIB</p>
+                            <p class="flex items-center justify-center gap-3 text-gray-600 max-sm:text-sm"><i class="fas fa-map-marker-alt text-purple-900 w-5"></i> Masjid Al-Ikhlas, Yogyakarta</p>
                         </div>
-                        <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 border-none py-3 px-8 rounded-full font-semibold cursor-pointer transition-all duration-300 mt-5 hover:-translate-y-1 hover:shadow-lg" onclick="openMap('akad')">
+                        <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 border-none py-3 px-8 rounded-full font-semibold cursor-pointer transition-all duration-300 mt-5 hover:-translate-y-1 hover:shadow-lg max-sm:py-2 max-sm:px-6 max-sm:text-sm" onclick="openMap('akad')">
                             <i class="fas fa-map mr-2"></i> Lihat Lokasi
                         </button>
                     </div>
-                    <div class="bg-gray-50 p-10 rounded-3xl text-center shadow-xl transition-transform duration-300 hover:-translate-y-3">
-                        <div class="w-20 h-20 bg-gradient-to-r from-purple-900 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl text-white">
+                    <div class="bg-gray-50 p-10 rounded-3xl text-center shadow-xl transition-transform duration-300 hover:-translate-y-3 max-sm:p-6">
+                        <div class="w-20 h-20 bg-gradient-to-r from-purple-900 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6 text-3xl text-white max-sm:w-16 max-sm:h-16 max-sm:text-2xl">
                             <i class="fas fa-glass-cheers"></i>
                         </div>
-                        <h3 class="font-serif text-2xl text-purple-900 mb-6">Resepsi</h3>
-                        <div class="space-y-3 mb-5">
-                            <p class="flex items-center justify-center gap-3 text-gray-600"><i class="fas fa-calendar text-purple-900 w-5"></i> Minggu, 25 Desember 2024</p>
-                            <p class="flex items-center justify-center gap-3 text-gray-600"><i class="fas fa-clock text-purple-900 w-5"></i> 11:00 - 15:00 WIB</p>
-                            <p class="flex items-center justify-center gap-3 text-gray-600"><i class="fas fa-map-marker-alt text-purple-900 w-5"></i> Gedung Serbaguna Taman Siswa, Yogyakarta</p>
+                        <h3 class="font-serif text-2xl text-purple-900 mb-6 max-sm:text-xl">Resepsi</h3>
+                        <div class="space-y-3 mb-5 max-sm:space-y-2">
+                            <p class="flex items-center justify-center gap-3 text-gray-600 max-sm:text-sm"><i class="fas fa-calendar text-purple-900 w-5"></i> Minggu, 25 Desember 2024</p>
+                            <p class="flex items-center justify-center gap-3 text-gray-600 max-sm:text-sm"><i class="fas fa-clock text-purple-900 w-5"></i> 11:00 - 15:00 WIB</p>
+                            <p class="flex items-center justify-center gap-3 text-gray-600 max-sm:text-sm"><i class="fas fa-map-marker-alt text-purple-900 w-5"></i> Gedung Serbaguna Taman Siswa, Yogyakarta</p>
                         </div>
-                        <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 border-none py-3 px-8 rounded-full font-semibold cursor-pointer transition-all duration-300 mt-5 hover:-translate-y-1 hover:shadow-lg" onclick="openMap('resepsi')">
+                        <button class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 border-none py-3 px-8 rounded-full font-semibold cursor-pointer transition-all duration-300 mt-5 hover:-translate-y-1 hover:shadow-lg max-sm:py-2 max-sm:px-6 max-sm:text-sm" onclick="openMap('resepsi')">
                             <i class="fas fa-map mr-2"></i> Lihat Lokasi
                         </button>
                     </div>
                 </div>
-                
                 <!-- Countdown Timer -->
-                <div class="text-center bg-gradient-to-br rom-[#A8B5A0] to-[#F5E6CC] p-12 rounded-3xl text-gray-900">
-                    <h3 class="font-serif text-3xl mb-10 text-[#D4AF37]">Menuju Hari Bahagia</h3>
-                    <div class="flex justify-center gap-8 flex-wrap" id="countdown">
-                        <div class="text-center bg-white/10 p-6 rounded-2xl min-w-24 backdrop-blur-sm">
-                            <span class="block text-4xl font-bold text-yellow-400 mb-1" id="days">00</span>
-                            <span class="text-sm uppercase tracking-wider">Hari</span>
+                <div class="text-center bg-gradient-to-br from-[#A8B5A0] to-[#F5E6CC] p-12 rounded-3xl text-gray-900 max-sm:p-6">
+                    <h3 class="font-serif text-3xl mb-10 text-[#D4AF37] max-sm:text-2xl max-sm:mb-6">Menuju Hari Bahagia</h3>
+                    <div class="flex justify-center gap-8 flex-wrap max-sm:gap-4" id="countdown">
+                        <div class="text-center bg-white/10 p-6 rounded-2xl min-w-24 backdrop-blur-sm max-sm:p-4 max-sm:min-w-[70px]">
+                            <span class="block text-4xl font-bold text-yellow-400 mb-1 max-sm:text-2xl" id="days">00</span>
+                            <span class="text-sm uppercase tracking-wider max-sm:text-xs">Hari</span>
                         </div>
-                        <div class="text-center bg-white/10 p-6 rounded-2xl min-w-24 backdrop-blur-sm">
-                            <span class="block text-4xl font-bold text-yellow-400 mb-1" id="hours">00</span>
-                            <span class="text-sm uppercase tracking-wider">Jam</span>
+                        <div class="text-center bg-white/10 p-6 rounded-2xl min-w-24 backdrop-blur-sm max-sm:p-4 max-sm:min-w-[70px]">
+                            <span class="block text-4xl font-bold text-yellow-400 mb-1 max-sm:text-2xl" id="hours">00</span>
+                            <span class="text-sm uppercase tracking-wider max-sm:text-xs">Jam</span>
                         </div>
-                        <div class="text-center bg-white/10 p-6 rounded-2xl min-w-24 backdrop-blur-sm">
-                            <span class="block text-4xl font-bold text-yellow-400 mb-1" id="minutes">00</span>
-                            <span class="text-sm uppercase tracking-wider">Menit</span>
+                        <div class="text-center bg-white/10 p-6 rounded-2xl min-w-24 backdrop-blur-sm max-sm:p-4 max-sm:min-w-[70px]">
+                            <span class="block text-4xl font-bold text-yellow-400 mb-1 max-sm:text-2xl" id="minutes">00</span>
+                            <span class="text-sm uppercase tracking-wider max-sm:text-xs">Menit</span>
                         </div>
-                        <div class="text-center bg-white/10 p-6 rounded-2xl min-w-24 backdrop-blur-sm">
-                            <span class="block text-4xl font-bold text-yellow-400 mb-1" id="seconds">00</span>
-                            <span class="text-sm uppercase tracking-wider">Detik</span>
+                        <div class="text-center bg-white/10 p-6 rounded-2xl min-w-24 backdrop-blur-sm max-sm:p-4 max-sm:min-w-[70px]">
+                            <span class="block text-4xl font-bold text-yellow-400 mb-1 max-sm:text-2xl" id="seconds">00</span>
+                            <span class="text-sm uppercase tracking-wider max-sm:text-xs">Detik</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Photo Gallery -->
-        <section id="gallery" class="py-24 bg-[rgb(245,230,204)]">
+          <!-- Photo Gallery -->
+        <section id="gallery" class="py-24 bg-[rgb(245,230,204)] max-sm:py-12">
             <div class="max-w-6xl mx-auto px-5">
-                <h2 class="font-serif text-4xl text-center mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded">Galeri Foto</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <h2 class="font-serif text-4xl text-center mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded max-sm:text-3xl max-sm:mb-8">Galeri Foto</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-sm:gap-3">
                     <div class="relative aspect-square rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" onclick="openLightbox(0)">
                         <img src="assets/pasangan(4).png" alt="Gallery 1" class="w-full h-full object-cover transition-transform duration-300">
                         <div class="absolute inset-0 bg-purple-900/80 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                            <i class="fas fa-search-plus text-3xl text-white"></i>
+                            <i class="fas fa-search-plus text-3xl text-white max-sm:text-2xl"></i>
                         </div>
                     </div>
                     <div class="relative aspect-square rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" onclick="openLightbox(1)">
                         <img src="assets/pasangan(5).png" alt="Gallery 2" class="w-full h-full object-cover transition-transform duration-300">
                         <div class="absolute inset-0 bg-purple-900/80 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                            <i class="fas fa-search-plus text-3xl text-white"></i>
+                            <i class="fas fa-search-plus text-3xl text-white max-sm:text-2xl"></i>
                         </div>
                     </div>
                     <div class="relative aspect-square rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" onclick="openLightbox(2)">
                         <img src="assets/pasangan(6).png" alt="Gallery 3" class="w-full h-full object-cover transition-transform duration-300">
                         <div class="absolute inset-0 bg-purple-900/80 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                            <i class="fas fa-search-plus text-3xl text-white"></i>
+                            <i class="fas fa-search-plus text-3xl text-white max-sm:text-2xl"></i>
                         </div>
                     </div>
                     <div class="relative aspect-square rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" onclick="openLightbox(3)">
                         <img src="assets/pasangan(7).png" alt="Gallery 4" class="w-full h-full object-cover transition-transform duration-300">
                         <div class="absolute inset-0 bg-purple-900/80 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                            <i class="fas fa-search-plus text-3xl text-white"></i>
+                            <i class="fas fa-search-plus text-3xl text-white max-sm:text-2xl"></i>
                         </div>
                     </div>
                     <div class="relative aspect-square rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" onclick="openLightbox(4)">
                         <img src="assets/pasangan(3).png" alt="Gallery 5" class="w-full h-full object-cover transition-transform duration-300">
                         <div class="absolute inset-0 bg-purple-900/80 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                            <i class="fas fa-search-plus text-3xl text-white"></i>
+                            <i class="fas fa-search-plus text-3xl text-white max-sm:text-2xl"></i>
                         </div>
                     </div>
                     <div class="relative aspect-square rounded-2xl overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105" onclick="openLightbox(5)">
                         <img src="assets/pasangan(1).png" alt="Gallery 6" class="w-full h-full object-cover transition-transform duration-300">
                         <div class="absolute inset-0 bg-purple-900/80 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100">
-                            <i class="fas fa-search-plus text-3xl text-white"></i>
+                            <i class="fas fa-search-plus text-3xl text-white max-sm:text-2xl"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- RSVP Section -->
-        <section id="rsvp" class="py-24 bg-[#F8D7DA]">
+          <!-- RSVP Section -->
+        <section id="rsvp" class="py-24 bg-[#F8D7DA] max-sm:py-12">
             <div class="max-w-2xl mx-auto px-5">
-                <h2 class="font-serif text-4xl text-center mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r  after:from-[#D4AF37] after:to-[#EBC75B] after:rounded">Konfirmasi Kehadiran</h2>
+                <h2 class="font-serif text-4xl text-center mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded max-sm:text-3xl max-sm:mb-8">Konfirmasi Kehadiran</h2>
                 <div class="text-center">
-                    <p class="text-xl text-gray-600 mb-12 leading-relaxed">Kehadiran dan doa restu Anda merupakan kebahagiaan bagi kami</p>
-                    <form class="bg-[#F5E6CC] p-12 rounded-3xl shadow-xl text-left" method="post" onsubmit="submitRSVP(event)">
+                    <p class="text-xl text-gray-600 mb-12 leading-relaxed max-sm:text-base max-sm:mb-8">Kehadiran dan doa restu Anda merupakan kebahagiaan bagi kami</p>
+                    <form class="bg-[#F5E6CC] p-12 rounded-3xl shadow-xl text-left max-sm:p-6" method="post" onsubmit="submitRSVP(event)">
                         <div class="mb-6">
-                            <label for="Nama" class="block mb-2 text-purple-800 font-semibold">Nama Lengkap</label>
-                            <input type="text" id="Nama" name="Nama" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900">
+                            <label for="Nama" class="block mb-2 text-purple-800 font-semibold max-sm:text-sm">Nama Lengkap</label>
+                            <input type="text" id="Nama" name="Nama" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900 max-sm:p-3 max-sm:text-sm">
                         </div>
                         <div class="mb-6">
-                            <label for="email" class="block mb-2 text-purple-900 font-semibold">Email</label>
-                            <input type="email" id="email" name="email" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900">
+                            <label for="email" class="block mb-2 text-purple-900 font-semibold max-sm:text-sm">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900 max-sm:p-3 max-sm:text-sm">
                         </div>
                         <div class="mb-6">
-                            <label for="phone" class="block mb-2 text-purple-900 font-semibold">Nomor Telepon</label>
-                            <input type="tel" id="phone" name="phone" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900">
+                            <label for="phone" class="block mb-2 text-purple-900 font-semibold max-sm:text-sm">Nomor Telepon</label>
+                            <input type="tel" id="phone" name="phone" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900 max-sm:p-3 max-sm:text-sm">
                         </div>
                         <div class="mb-6">
-                            <label for="attendance" class="block mb-2 text-purple-900 font-semibold">Kehadiran</label>
-                            <select id="attendance" name="attendance" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900">
+                            <label for="attendance" class="block mb-2 text-purple-900 font-semibold max-sm:text-sm">Kehadiran</label>
+                            <select id="attendance" name="attendance" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900 max-sm:p-3 max-sm:text-sm">
                                 <option value="">Pilih kehadiran</option>
                                 <option value="hadir">Hadir</option>
                                 <option value="tidak-hadir">Tidak Hadir</option>
                             </select>
                         </div>
                         <div class="mb-6">
-                            <label for="guests" class="block mb-2 text-purple-900 font-semibold">Jumlah Tamu</label>
-                            <select id="guests" name="guests" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900">
+                            <label for="guests" class="block mb-2 text-purple-900 font-semibold max-sm:text-sm">Jumlah Tamu</label>
+                            <select id="guests" name="guests" required class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans focus:outline-none focus:border-purple-900 max-sm:p-3 max-sm:text-sm">
                                 <option value="">Pilih jumlah</option>
                                 <option value="1">1 Orang</option>
                                 <option value="2">2 Orang</option>
@@ -247,91 +244,88 @@
                             </select>
                         </div>
                         <div class="mb-6">
-                            <label for="ucapan" class="block mb-2 text-purple-900 font-semibold">Pesan & Doa</label>
-                            <textarea id="ucapan" name="ucapan" rows="4" placeholder="Tuliskan pesan dan doa untuk kami..." class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans resize-y min-h-24 focus:outline-none focus:border-purple-900"></textarea>
+                            <label for="ucapan" class="block mb-2 text-purple-900 font-semibold max-sm:text-sm">Pesan & Doa</label>
+                            <textarea id="ucapan" name="ucapan" rows="4" placeholder="Tuliskan pesan dan doa untuk kami..." class="w-full p-4 border-2 border-gray-200 rounded-xl text-base transition-colors duration-300 font-sans resize-y min-h-24 focus:outline-none focus:border-purple-900 max-sm:p-3 max-sm:text-sm"></textarea>
                         </div>
-                        <button type="submit" class="bg-gradient-to-r from-[#A8B5A0] to-[#F5E6CC] text-[#2E2E2E] border-none py-4 px-10 text-lg font-semibold rounded-full cursor-pointer transition-all duration-300 w-full hover:-translate-y-1 hover:shadow-xl">
-                            <i class="fas fa-paper-plane mr-3"></i>
+                        <button type="submit" class="bg-gradient-to-r from-[#A8B5A0] to-[#F5E6CC] text-[#2E2E2E] border-none py-4 px-10 text-lg font-semibold rounded-full cursor-pointer transition-all duration-300 w-full hover:-translate-y-1 hover:shadow-xl max-sm:py-3 max-sm:px-6 max-sm:text-base">
+                            <i class="fas fa-paper-plane mr-3 max-sm:mr-2"></i>
                             Kirim Konfirmasi
                         </button>
                     </form>
                 </div>
             </div>
         </section>
-
-        <!-- Gift Section -->
-        <section id="gift" class="py-24 bg-[#F5E6CC]">
+         <!-- Gift Section -->
+        <section id="gift" class="py-24 bg-[#F5E6CC] max-sm:py-12">
         <div class="max-w-3xl mx-auto px-5 text-center">
-            <h2 class="font-serif text-3xl sm:text-4xl mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded">
+            <h2 class="font-serif text-3xl sm:text-4xl mb-12 text-[#556B2F] relative after:content-[''] after:absolute after:-bottom-4 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-gradient-to-r after:from-[#D4AF37] after:to-[#EBC75B] after:rounded max-sm:text-3xl max-sm:mb-8">
                 Kirim Hadiah
             </h2>
-            <p class="text-gray-600 mb-12 leading-relaxed text-base sm:text-lg">
+            <p class="text-gray-600 mb-12 leading-relaxed text-base sm:text-lg max-sm:text-sm max-sm:mb-8">
                 Kehadiran Anda sudah menjadi hadiah terindah bagi kami. 
                 Namun jika berkenan, Anda juga bisa memberikan tanda kasih melalui rekening berikut:
             </p>
 
-            <div popover id="saya" class="fixed inset-0 m-auto bg-white/70 p-8 rounded-3xl shadow-xl w-[90%] max-w-sm text-center items-center justify-center">
-                <h3 class="text-2xl font-semibold text-purple-900 mb-3">Bank BCA</h3>
-                <p class="text-lg text-gray-700 mb-2">No. Rekening: <span class="font-bold">1234567890</span></p>
-                <p class="text-lg text-gray-700 mb-4">a.n. Arya Wijaya</p>
-                <button onclick="navigator.clipboard.writeText('1234567890')" class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 py-3 px-8 rounded-full font-semibold transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <div popover id="saya" class="fixed inset-0 m-auto bg-white/70 p-8 rounded-3xl shadow-xl w-[90%] max-w-sm text-center items-center justify-center max-sm:p-6">
+                <h3 class="text-2xl font-semibold text-purple-900 mb-3 max-sm:text-xl">Bank BCA</h3>
+                <p class="text-lg text-gray-700 mb-2 max-sm:text-base">No. Rekening: <span class="font-bold">1234567890</span></p>
+                <p class="text-lg text-gray-700 mb-4 max-sm:text-base">a.n. Arya Wijaya</p>
+                <button onclick="navigator.clipboard.writeText('1234567890')" class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 py-3 px-8 rounded-full font-semibold transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg max-sm:py-2 max-sm:px-6 max-sm:text-sm">
                     <i class="fas fa-copy mr-2"></i> Salin No. Rekening
                 </button>
             </div>
             
             <div class="flex flex-col sm:flex-row sm:justify-center gap-6 justify-center items-center">
-                <button popovertarget="saya" class="bg-gradient-to-r from-[#D4AF37] to-[#EBC75B] text-[#2E2E2E] py-4 sm:py-5 px-6 sm:px-10 text-base sm:text-lg w-40 sm:w-auto font-semibold rounded-full shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all ">
-                  BCA
-               </button>
-               <button popovertarget="aku" class="bg-gradient-to-r from-[#D4AF37] to-[#EBC75B] text-[#2E2E2E] py-4 sm:py-5 px-6 sm:px-10 text-base sm:text-lg w-40 sm:w-auto font-semibold rounded-full shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all ">
-                  MANDIRI
-               </button>
+                <button popovertarget="saya" class="bg-gradient-to-r from-[#D4AF37] to-[#EBC75B] text-[#2E2E2E] py-4 sm:py-5 px-6 sm:px-10 text-base sm:text-lg w-40 sm:w-auto font-semibold rounded-full shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all max-sm:w-32 max-sm:py-3 max-sm:px-4 max-sm:text-base">
+                    BCA
+                </button>
+                <button popovertarget="aku" class="bg-gradient-to-r from-[#D4AF37] to-[#EBC75B] text-[#2E2E2E] py-4 sm:py-5 px-6 sm:px-10 text-base sm:text-lg w-40 sm:w-auto font-semibold rounded-full shadow-lg hover:-translate-y-1 hover:shadow-xl transition-all max-sm:w-32 max-sm:py-3 max-sm:px-4 max-sm:text-base">
+                    MANDIRI
+                </button>
 
             </div>
 
-            <div popover id="aku" class="fixed inset-0 m-auto bg-white/70 p-8 rounded-3xl shadow-xl w-[90%] max-w-sm text-center items-center justify-center ">
-                <h3 class="text-2xl font-semibold text-purple-900 mb-3">Bank Mandiri</h3>
-                <p class="text-lg text-gray-700 mb-2">No. Rekening: <span class="font-bold">9876543210</span></p>
-                <p class="text-lg text-gray-700 mb-4">a.n. Sari Dewi</p>
-                <button onclick="navigator.clipboard.writeText('9876543210')" class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 py-3 px-8 rounded-full font-semibold transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg">
+            <div popover id="aku" class="fixed inset-0 m-auto bg-white/70 p-8 rounded-3xl shadow-xl w-[90%] max-w-sm text-center items-center justify-center max-sm:p-6">
+                <h3 class="text-2xl font-semibold text-purple-900 mb-3 max-sm:text-xl">Bank Mandiri</h3>
+                <p class="text-lg text-gray-700 mb-2 max-sm:text-base">No. Rekening: <span class="font-bold">9876543210</span></p>
+                <p class="text-lg text-gray-700 mb-4 max-sm:text-base">a.n. Sari Dewi</p>
+                <button onclick="navigator.clipboard.writeText('9876543210')" class="bg-gradient-to-r from-yellow-400 to-yellow-600 text-purple-900 py-3 px-8 rounded-full font-semibold transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg max-sm:py-2 max-sm:px-6 max-sm:text-sm">
                     <i class="fas fa-copy mr-2"></i> Salin No. Rekening
                 </button>
             </div>
         </div>
         </section>
-
-        <!-- Thank You Section -->
-        <section class="py-24 bg-gradient-to-br from-[#A8B5A0] to-[#F8D7DA] text-gray-900 text-center">
+          <!-- Thank You Section -->
+        <section class="py-24 bg-gradient-to-br from-[#A8B5A0] to-[#F8D7DA] text-gray-900 text-center max-sm:py-12">
             <div class="max-w-4xl mx-auto px-5">
-                <h2 class="font-serif text-4xl mb-8 text-[#D4AF37]">Terima Kasih</h2>
-                <p class="text-xl leading-relaxed mb-10">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.</p>
+                <h2 class="font-serif text-4xl mb-8 text-[#D4AF37] max-sm:text-3xl">Terima Kasih</h2>
+                <p class="text-xl leading-relaxed mb-10 max-sm:text-base max-sm:mb-6">Merupakan suatu kebahagiaan dan kehormatan bagi kami, apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kami.</p>
                 <div class="mt-12">
-                    <p class="mb-5">Wassalamu'alaikum Wr. Wb.</p>
-                    <p class="font-serif text-3xl text-[#D4AF37]">Arya & Sari</p>
+                    <p class="mb-5 max-sm:text-sm">Wassalamu'alaikum Wr. Wb.</p>
+                    <p class="font-serif text-3xl text-[#D4AF37] max-sm:text-2xl">Arya & Sari</p>
                 </div>
             </div>
         </section>
         </div>
 
-        <!-- Map Modal -->
+     <!-- Map Modal -->
         <div id="mapModal" class="hidden fixed z-50 left-0 top-0 w-full h-full bg-black/80">
             <div class="bg-white my-12 mx-auto p-5 rounded-2xl w-11/12 max-w-4xl relative">
                 <span class="text-gray-400 float-right text-3xl font-bold cursor-pointer absolute right-5 top-4 hover:text-black" onclick="closeMap()">&times;</span>
                 <div id="mapContainer"></div>
             </div>
         </div>
-
-    <!-- Success Modal -->
-    <div id="successModal" class="hidden fixed z-50 left-0 top-0 w-full h-full bg-black/80">
-        <div class="bg-white my-12 mx-auto p-12 rounded-2xl w-11/12 max-w-lg relative text-center">
-            <div class="text-6xl text-green-500 mb-5">
-                <i class="fas fa-check-circle"></i>
+         <!-- Success Modal -->
+        <div id="successModal" class="hidden fixed z-50 left-0 top-0 w-full h-full bg-black/80">
+            <div class="bg-white my-12 mx-auto p-12 rounded-2xl w-11/12 max-w-lg relative text-center max-sm:p-6 max-sm:my-6">
+                <div class="text-6xl text-green-500 mb-5 max-sm:text-4xl">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="text-purple-900 mb-4 text-2xl max-sm:text-xl">Terima Kasih!</h3>
+                <p class="mb-5 max-sm:text-sm">Konfirmasi kehadiran Anda telah berhasil dikirim.</p>
+                <button onclick="closeSuccessModal()" class="bg-gradient-to-r from-purple-900 to-purple-700 text-white border-none py-3 px-8 rounded-full cursor-pointer mt-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg max-sm:py-2 max-sm:px-6 max-sm:text-sm">Tutup</button>
             </div>
-            <h3 class="text-purple-900 mb-4 text-2xl">Terima Kasih!</h3>
-            <p class="mb-5">Konfirmasi kehadiran Anda telah berhasil dikirim.</p>
-            <button onclick="closeSuccessModal()" class="bg-gradient-to-r from-purple-900 to-purple-700 text-white border-none py-3 px-8 rounded-full cursor-pointer mt-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">Tutup</button>
         </div>
-    </div>
 
 
     <script src="js1.js"></script>
